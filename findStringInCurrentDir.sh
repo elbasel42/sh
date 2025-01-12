@@ -14,4 +14,4 @@ fd --type f --exec zsh -c '
 ' -- {} "$search_string" | \
 fzf --preview 'echo {} | cut -d: -f1 | xargs -I % rg --color=always --line-number --fixed-strings -i -C 3 "%"' \
     --preview-window=up:40%:wrap --delimiter=':' --with-nth 1.. \
-    --bind 'enter:execute(echo {} | cut -d: -f1 | xargs -I % rg --color=always --line-number --fixed-strings -i "%")'
+    --bind 'enter:execute(nvim $(echo {} | cut -d: -f1) < /dev/tty > /dev/tty)'  # Open the matched file path in nvim within the fzf window
