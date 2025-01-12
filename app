@@ -6,7 +6,8 @@ declare -A appMap_telegram=(["name"]="telegram" ["path"]="https://web.telegram.o
 declare -A appMap_wikipedia=(["name"]="wikipedia" ["path"]="https://www.wikipedia.org")
 declare -A appMap_hianime=(["name"]="hianime" ["path"]="https://hianime.to/most-popular")
 declare -A appMap_googlesearch=(["name"]="googlesearch" ["path"]="https://www.google.com/search?q=")
-appMap=(appMap_whatsapp appMap_telegram appMap_wikipediat appMap_hianime appMap_googlesearch)
+declare -A appMap_pull_requests=(["name"]="pull-requests" ["path"]="https://dev.azure.com/Algoriza/Monshaat/_git/InternalPortal/pullrequests?_a=active")
+appMap=(appMap_whatsapp appMap_telegram appMap_wikipedia appMap_hianime appMap_googlesearch appMap_pull_requests)
 argOne=$1
 argTwo=$2
 
@@ -66,3 +67,5 @@ if [[ ${#matches[@]} -ne 0 ]]; then
     done
     exit 0
 fi
+
+echo "No matched found for $argOne"
