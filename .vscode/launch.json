@@ -10,7 +10,7 @@
       "name": "Bash-Debug (type in script name)",
       "cwd": "${workspaceFolder}",
       "program": "${workspaceFolder}/app",
-      "args": ["w"]
+      "args": ["g"]
     }
   ]
 }
