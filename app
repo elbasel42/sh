@@ -3,13 +3,13 @@
 # declare a var `appMap` of type list[map] where `map : {name: string, path: string}`
 declare -A appMap_whatsapp=(["name"]="whatsapp" ["path"]="https://web.whatsapp.com")
 declare -A appMap_telegram=(["name"]="telegram" ["path"]="https://web.telegram.org")
-declare -A appMap_wikipedia=(["name"]="wikipedia" ["path"]="https://www.wikipedia.org")
 declare -A appMap_hianime=(["name"]="hianime" ["path"]="https://hianime.to/most-popular")
 declare -A appMap_googlesearch=(["name"]="googlesearch" ["path"]="https://www.google.com/search?q=")
 declare -A appMap_pull_requests=(["name"]="pull-requests" ["path"]="https://dev.azure.com/Algoriza/Monshaat/_git/InternalPortal/pullrequests?_a=active")
 declare -A appMap_music=(["name"]="music" ["path"]="https://music.youtube.com")
 declare -A appMap_chatgpt=(["name"]="chatgpt" ["path"]="https://chat.openai.com")
-appMap=(appMap_whatsapp appMap_telegram appMap_wikipedia appMap_hianime appMap_googlesearch appMap_pull_requests appMap_music appMap_chatgpt)
+declare -A appMap_odin=(["name"]="odin" ["path"]="https://www.theodinproject.com")
+appMap=(appMap_whatsapp appMap_telegram appMap_hianime appMap_googlesearch appMap_pull_requests appMap_music appMap_chatgpt appMap_odin)
 argOne=$1
 argTwo=$2
 

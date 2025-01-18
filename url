@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+brave --app=$1 &>/dev/null &
+disown
